@@ -17,8 +17,7 @@ class ChannelForm extends Component{
 						className='form-control'
 						placeholder='Add Channel'
 						type='text'
-						ref='channel'
-					/>
+						ref='channel' />
 				</div>
 			</form>
 		)
