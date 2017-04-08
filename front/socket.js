@@ -1,9 +1,9 @@
 import {EventEmitter} from 'events';
 
-class Socket extends EventEmitter{
-	constructor(ws - new WebSocket(), ee = new EventEmitter()){
-		this.ws - ws;
-		this.ee - ee;
+class Socket{
+	constructor(ws = new WebSocket(), ee = new EventEmitter()){
+		this.ws = ws;
+		this.ee = ee;
 		ws.onmessage = this.message.bind(this);
 		ws.onopen = this.open.bind(this);
 		ws.onclose = this.open.bind(this);
