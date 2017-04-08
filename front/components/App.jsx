@@ -36,6 +36,7 @@ class App extends Component{
 		let author = users.length > 0 ? users[0].name : 'anonymous';
 		messages.push({id: messages.length, body, createdAt, author});
 		this.setState({messages});
+		console.log(this.state)
 	}
 
 	render(){

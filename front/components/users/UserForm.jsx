@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import UserList from './UserList.jsx';
 
 class UserForm extends Component{
 	onSubmit(e){

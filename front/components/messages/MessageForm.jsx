@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
-import MessageList from './MessageList.jsx';
 
 class MessageForm extends Component{
 	onSubmit(e){
 		e.preventDefault();
 		const node = this.refs.message;
 		const message = node.value;
-		console.log(message);
 		this.props.addMessage(message);
 		node.value = '';
 	}
